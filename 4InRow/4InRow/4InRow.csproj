@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>_4InRow</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="img\**" />
+    <EmbeddedResource Remove="img\**" />
+    <None Remove="img\**" />
+    <Page Remove="img\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="View\0.png" />
+    <None Remove="View\eye-slash.png" />
+    <None Remove="View\img2.jpg" />
+    <None Remove="View\key.png" />
+    <None Remove="View\logoF.png" />
+    <None Remove="View\user-circle.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CEC_Framework" Version="1.2.9" />
+    <PackageReference Include="FontAwesome.Sharp" Version="6.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="View\0.png" />
+    <Resource Include="View\img2.jpg" />
+    <Resource Include="View\key.png" />
+    <Resource Include="View\logoF.png" />
+    <Resource Include="View\user-circle.png" />
+  </ItemGroup>
+
+</Project>
